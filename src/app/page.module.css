@@ -294,7 +294,7 @@
   line-height: 1.25;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-noto-serif-jp);
 }
 
 @media (min-width: 768px) {
@@ -326,7 +326,7 @@
 .heroSubText {
   color: rgba(255, 255, 255, 0.9);
   font-size: 1rem;
-  font-family: var(--font-serif);
+  font-family: var(--font-noto-serif-jp);
   font-weight: 600;
 }
 
@@ -397,7 +397,7 @@
   font-weight: 500;
   color: #1f1f1f;
   line-height: 1.25;
-  font-family: var(--font-serif);
+  font-family: var(--font-noto-serif-jp);
 }
 
 @media (min-width: 768px) {
@@ -499,7 +499,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: #1f1f1f;
-  font-family: var(--font-serif);
+  font-family: var(--font-noto-serif-jp);
 }
 
 @media (min-width: 768px) {
@@ -513,7 +513,7 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: #1f1f1f;
-  font-family: var(--font-serif);
+  font-family: var(--font-noto-serif-jp);
   line-height: 1.25;
 }
 
@@ -640,7 +640,7 @@
   font-weight: 500;
   color: #1f1f1f;
   line-height: 1.25;
-  font-family: var(--font-serif);
+  font-family: var(--font-noto-serif-jp);
 }
 
 @media (min-width: 768px) {

@@ -124,7 +124,7 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-[1280px] mx-auto px-6 h-full flex flex-col justify-center">
         <div className="max-w-xl">
-          <h1 className="text-white text-4xl md:text-5xl lg:text-[52px] font-medium leading-tight tracking-tight mb-6 font-serif">
+          <h1 className="text-white text-4xl md:text-5xl lg:text-[52px] font-medium leading-tight tracking-[2px] mb-6 font-serif">
             いい仕事があれば、<br />転職したい。
           </h1>
           <div className="flex items-center gap-3 mb-10">

@@ -2,6 +2,7 @@
 .pageWrapper {
   min-height: 100vh;
   font-family: var(--font-sans);
+  letter-spacing: 2px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,7 +24,7 @@
 .sectionLabelText {
   color: #aa9473;
   font-size: 0.875rem;
-  letter-spacing: 0.1em;
+  letter-spacing: 2px;
 }
 
 /* ─── CTA Button ────────────────────────────────────────────────────────── */
@@ -69,7 +70,7 @@
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 2px;
   text-align: center;
 }
 

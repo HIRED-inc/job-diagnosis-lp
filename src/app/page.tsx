@@ -511,29 +511,21 @@ function FaqSection() {
                 className={styles.faqButton}
                 onClick={() => setOpenIndex(openIndex === i ? null : i)}
               >
-                <div className={styles.faqQuestion}>
-                  <span className={styles.faqQ}>Q</span>
-                  <span className={styles.faqQText}>
-                    {item.q}
-                  </span>
-                </div>
-                <span
-                  className={`${styles.faqToggle} ${openIndex === i ? styles.faqToggleOpen : ""}`}
-                >
-                  +
-                </span>
+                <span className={styles.faqQText}>{item.q}</span>
+                <span className={`${styles.faqToggle} ${openIndex === i ? styles.faqToggleOpen : ""}`}>+</span>
               </button>
 
               {openIndex === i && (
                 <div className={styles.faqAnswer}>
-                  <div className={styles.faqAnswerInner}>
-                    <span className={styles.faqA}>A</span>
-                    <p className={styles.faqAText}>{item.a}</p>
-                  </div>
+                  <p className={styles.faqAText}>{item.a}</p>
                 </div>
               )}
             </div>
           ))}
+        </div>
+
+        <div className={styles.faqCta}>
+          <CtaButtonCenter />
         </div>
 
         {/* Disclaimers */}

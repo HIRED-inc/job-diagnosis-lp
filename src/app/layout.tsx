@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Serif_JP, Noto_Sans_JP } from "next/font/google";
+import { Noto_Serif_JP, Noto_Sans_JP, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
 
 const notoSerifJP = Noto_Serif_JP({
@@ -14,6 +14,12 @@ const notoSansJP = Noto_Sans_JP({
   weight: ["400", "500", "700"],
 });
 
+const dmSerifDisplay = DM_Serif_Display({
+  variable: "--font-dm-serif-display",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+
 export const metadata: Metadata = {
   title: "エージェントの窓口",
   description: "無料の転職相談サービス",
@@ -26,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${notoSerifJP.variable} ${notoSansJP.variable} antialiased`}>
+      <body className={`${notoSerifJP.variable} ${notoSansJP.variable} ${dmSerifDisplay.variable} antialiased`}>
         {children}
       </body>
     </html>

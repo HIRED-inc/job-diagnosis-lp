@@ -545,7 +545,8 @@
 .itemNumber {
   color: #aa9473;
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: var(--font-dm-serif-display);
   margin-top: 0.25rem;
   width: 1.5rem;
   flex-shrink: 0;

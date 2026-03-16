@@ -33,7 +33,7 @@ function CtaButton({ className = "" }: { className?: string }) {
       className={`flex items-center justify-between w-full max-w-[345px] h-[65px] rounded-sm overflow-hidden shadow-md hover:opacity-90 transition-opacity ${className}`}
       style={{ background: "linear-gradient(90deg, #63ab3f 0%, #37db68 100%)" }}
     >
-      <div className="flex flex-col items-center justify-center w-[52px] h-full bg-[#3bad4e] text-white text-[10px] font-bold leading-tight shrink-0">
+      <div className="flex flex-col items-center justify-center w-[52px] h-full bg-white text-[#63ab3f] text-[10px] font-bold leading-tight shrink-0">
         <span>登録</span>
         <span>1分</span>
       </div>

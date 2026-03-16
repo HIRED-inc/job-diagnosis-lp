@@ -29,6 +29,7 @@
 
 /* ─── CTA Button ────────────────────────────────────────────────────────── */
 .ctaButton {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,10 +76,11 @@
 }
 
 .ctaArrow {
+  position: absolute;
+  right: 1rem;
   color: #ffffff;
   font-size: 1.25rem;
   font-weight: 700;
-  padding-right: 1rem;
 }
 
 .ctaCenter {

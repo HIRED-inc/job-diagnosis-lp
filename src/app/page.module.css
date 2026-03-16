@@ -31,7 +31,8 @@
 .ctaButton {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
   width: 100%;
   max-width: 345px;
   height: 65px;
@@ -41,7 +42,7 @@
   transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
   border: none;
   cursor: pointer;
-  padding-left: 24px;
+  padding: 0 24px;
 }
 
 .ctaButton:hover {
@@ -66,7 +67,6 @@
 }
 
 .ctaLabel {
-  flex: 1;
   color: #ffffff;
   font-size: 1rem;
   font-weight: 700;

@@ -174,6 +174,205 @@ function ServiceSection() {
   );
 }
 
+// ─── Comparison ───────────────────────────────────────────────────────────
+
+function PersonIcon() {
+  return (
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="18" fill="#e8dfd4" />
+      <circle cx="18" cy="13" r="5" fill="#aa9473" />
+      <path d="M7 30c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="#aa9473" />
+    </svg>
+  );
+}
+
+function BuildingIcon() {
+  return (
+    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="18" cy="18" r="18" fill="#d8d8d8" />
+      <rect x="10" y="10" width="16" height="18" rx="1" fill="#6b6b6b" />
+      <rect x="13" y="13" width="3" height="3" fill="white" />
+      <rect x="20" y="13" width="3" height="3" fill="white" />
+      <rect x="13" y="19" width="3" height="3" fill="white" />
+      <rect x="20" y="19" width="3" height="3" fill="white" />
+      <rect x="15" y="24" width="6" height="4" fill="#4a4a4a" />
+    </svg>
+  );
+}
+
+function ComparisonSection() {
+  const [activeTab, setActiveTab] = useState<0 | 1>(0);
+
+  return (
+    <section className={styles.comparisonSection}>
+      <div className={styles.sectionInner}>
+        {/* Header */}
+        <div className={styles.comparisonHeader}>
+          <SectionLabel label="従来のサービスとの違い" />
+          <h2 className={styles.comparisonHeading}>これまでの転職サービスとの違い</h2>
+          <p className={styles.comparisonDesc}>
+            「求職者」と「エージェント」の間に立って、中立な立場で転職をサポートするサービスです。
+          </p>
+        </div>
+
+        {/* Mobile tabs */}
+        <div className={styles.comparisonTabs}>
+          <button
+            className={`${styles.comparisonTab} ${activeTab === 0 ? styles.comparisonTabActive : ""}`}
+            onClick={() => setActiveTab(0)}
+          >
+            エージェントの窓口
+          </button>
+          <button
+            className={`${styles.comparisonTab} ${activeTab === 1 ? styles.comparisonTabActiveDark : ""}`}
+            onClick={() => setActiveTab(1)}
+          >
+            従来の転職サービス
+          </button>
+        </div>
+
+        {/* 2-column grid */}
+        <div className={styles.comparisonGrid}>
+
+          {/* ── Left: エージェントの窓口 ── */}
+          <div
+            className={styles.comparisonCard}
+            style={{ display: activeTab === 0 ? undefined : "none" } as React.CSSProperties}
+            data-desktop-visible="true"
+          >
+            {/* Card header */}
+            <div className={styles.comparisonCardHeader} style={{ backgroundColor: "#aa9473" }}>
+              <span className={styles.comparisonCardHeaderIcon}>□</span>
+              <span>エージェントの窓口</span>
+            </div>
+
+            {/* 求職者 badge */}
+            <div className={styles.comparisonBadgeRow}>
+              <span className={styles.comparisonBadgeOutline} style={{ borderColor: "#aa9473", color: "#aa9473" }}>
+                求職者
+              </span>
+            </div>
+
+            {/* Arrow */}
+            <div className={styles.comparisonArrow}>∨</div>
+
+            {/* Feature box */}
+            <div className={styles.comparisonFeatureBox} style={{ borderColor: "#aa9473" }}>
+              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#f3ede3", color: "#aa9473" }}>
+                エージェントの窓口
+              </div>
+              <ul className={styles.comparisonFeatureList}>
+                {[
+                  "転職すべきか、から相談できる",
+                  "あなたに合ったサービスがわかる",
+                  "希望者に優秀なエージェントを紹介",
+                  "中立な立場で転職活動をサポート",
+                ].map((text, i) => (
+                  <li key={i} className={styles.comparisonFeatureItem}>
+                    <span className={styles.comparisonCheck} style={{ color: "#63ab3f" }}>✓</span>
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Arrow */}
+            <div className={styles.comparisonArrow}>∨</div>
+
+            {/* エージェント badge */}
+            <div className={styles.comparisonBadgeRow}>
+              <span className={styles.comparisonBadgeFilled} style={{ backgroundColor: "#aa9473" }}>
+                転職エージェント
+              </span>
+            </div>
+
+            <p className={styles.comparisonAgentNote}>優秀な担当者をご紹介</p>
+
+            {/* Agent cards */}
+            <div className={styles.comparisonAgentCards}>
+              {["A社担当者", "B社担当者", "C社担当者"].map((label, i) => (
+                <div key={i} className={styles.comparisonAgentCard}>
+                  <PersonIcon />
+                  <span className={styles.comparisonAgentLabel}>{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── Right: 従来の転職サービス ── */}
+          <div
+            className={styles.comparisonCard}
+            style={{ display: activeTab === 1 ? undefined : "none" } as React.CSSProperties}
+            data-desktop-visible="true"
+          >
+            {/* Card header */}
+            <div className={styles.comparisonCardHeader} style={{ backgroundColor: "#4a4a4a" }}>
+              <span>従来の転職サービス</span>
+            </div>
+
+            {/* 求職者 badge */}
+            <div className={styles.comparisonBadgeRow}>
+              <span className={styles.comparisonBadgeOutline} style={{ borderColor: "#6b6b6b", color: "#6b6b6b" }}>
+                求職者
+              </span>
+            </div>
+
+            {/* Arrow */}
+            <div className={styles.comparisonArrow}>∨</div>
+
+            {/* Feature box */}
+            <div className={styles.comparisonFeatureBox} style={{ borderColor: "#6b6b6b" }}>
+              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#4a4a4a", color: "#ffffff" }}>
+                従来の転職サービス
+              </div>
+              <ul className={styles.comparisonFeatureList}>
+                {[
+                  "エージェントの相談は転職前提になる",
+                  "どのサービスが合うかわからない",
+                  "担当者の質にばらつきがある",
+                  "自社求人を優先的に薦められる",
+                ].map((text, i) => (
+                  <li key={i} className={styles.comparisonFeatureItem}>
+                    <span className={styles.comparisonCheck} style={{ color: "#e07b39" }}>▲</span>
+                    <span>{text}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Arrow */}
+            <div className={styles.comparisonArrow}>∨</div>
+
+            {/* エージェント badge */}
+            <div className={styles.comparisonBadgeRow}>
+              <span className={styles.comparisonBadgeFilled} style={{ backgroundColor: "#6b6b6b" }}>
+                転職エージェント
+              </span>
+            </div>
+
+            <p className={styles.comparisonAgentNote}>基本的に担当者は選べない</p>
+
+            {/* Agent cards */}
+            <div className={styles.comparisonAgentCards}>
+              {["A社", "B社", "C社"].map((label, i) => (
+                <div key={i} className={styles.comparisonAgentCard}>
+                  <BuildingIcon />
+                  <span className={styles.comparisonAgentLabel}>{label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* CTA */}
+        <div className={styles.comparisonCta}>
+          <CtaButtonCenter />
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ─── Problems ─────────────────────────────────────────────────────────────
 const PROBLEMS = [
   {
@@ -578,6 +777,7 @@ export default function Page() {
       <main>
         <HeroSection />
         <ServiceSection />
+        <ComparisonSection />
         <ProblemsSection />
         <SolutionsSection />
         <StepsSection />

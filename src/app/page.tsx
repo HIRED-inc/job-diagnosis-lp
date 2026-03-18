@@ -212,7 +212,7 @@ function ComparisonSection() {
         {/* Header */}
         <div className={styles.comparisonHeader}>
           <SectionLabel label="従来のサービスとの違い" />
-          <h2 className={styles.comparisonHeading}>これまでの転職サービスとの違い</h2>
+          <h2 className={styles.comparisonHeading}>これまでの<br />転職サービスとの違い</h2>
           <p className={styles.comparisonDesc}>
             「求職者」と「エージェント」の間に立って、中立な立場で転職をサポートするサービスです。
           </p>

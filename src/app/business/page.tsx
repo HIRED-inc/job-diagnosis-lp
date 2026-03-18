@@ -106,7 +106,6 @@ function ServiceSection() {
       <div className={styles.sectionInner}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionLabel}>
-            <span className={styles.sectionLabelLine} />
             <span className={styles.sectionLabelText}>SERVICE OVERVIEW</span>
           </div>
           <h2 className={styles.sectionHeading}>求職者に直接ご紹介</h2>

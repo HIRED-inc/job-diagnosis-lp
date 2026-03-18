@@ -650,7 +650,8 @@
 
 @media (min-width: 1024px) {
   .solutionsLeft {
-    width: 380px;
+    flex: 1;
+    width: auto;
   }
 }
 
@@ -673,11 +674,14 @@
 .solutionsImgWrap {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 1024px) {
   .solutionsImgWrap {
-    justify-content: flex-start;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 380px;
   }
 }
 
@@ -729,6 +733,15 @@
 
 .solutionsCta {
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .solutionsCtaBtn {
+    max-width: 768px;
+    width: 100%;
+  }
 }
 
 /* ─── Steps ─────────────────────────────────────────────────────────────── */

@@ -488,48 +488,48 @@ function SolutionsSection() {
     <section id="solutions" className={styles.solutionsSection}>
       <div className={styles.sectionInner}>
         <div className={styles.solutionsLayout}>
-          {/* Left: heading + illustration */}
+          {/* Left: heading + solution list */}
           <div className={styles.solutionsLeft}>
-            <SectionLabel label="エージェントの窓口でできること" />
+            <SectionLabel label="転職の悩みを解決" />
             <h2 className={styles.solutionsHeading}>
-              エージェントの窓口が<br />悩みを解決
+              エージェントの窓口が<br />選ばれる理由
             </h2>
-            <div className={styles.solutionsImgWrap}>
-              <img
-                src={ASSETS.solutionsIllustration}
-                alt="エージェントの窓口イラスト"
-                className={styles.solutionsIllustration}
-              />
-            </div>
-          </div>
-
-          {/* Right: solution list */}
-          <div className={styles.solutionsRight}>
-            {SOLUTIONS.map((item, i) => (
-              <div key={i}>
-                <div className={styles.solutionItem}>
-                  <span className={styles.itemNumber}>
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <h3 className={styles.solutionTitle}>
-                      {item.title}
-                    </h3>
-                    <p className={styles.itemBody}>
-                      {item.body}
-                    </p>
+            <div className={styles.solutionsRight}>
+              {SOLUTIONS.map((item, i) => (
+                <div key={i}>
+                  <div className={styles.solutionItem}>
+                    <span className={styles.itemNumber}>
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    <div>
+                      <h3 className={styles.solutionTitle}>
+                        {item.title}
+                      </h3>
+                      <p className={styles.itemBody}>
+                        {item.body}
+                      </p>
+                    </div>
                   </div>
+                  {i < SOLUTIONS.length - 1 && (
+                    <hr className={styles.solutionsDivider} />
+                  )}
                 </div>
-                {i < SOLUTIONS.length - 1 && (
-                  <hr className={styles.solutionsDivider} />
-                )}
-              </div>
-            ))}
-
-            <div className={styles.solutionsCta}>
-              <CtaButton />
+              ))}
             </div>
           </div>
+
+          {/* Right: illustration */}
+          <div className={styles.solutionsImgWrap}>
+            <img
+              src={ASSETS.solutionsIllustration}
+              alt="エージェントの窓口イラスト"
+              className={styles.solutionsIllustration}
+            />
+          </div>
+        </div>
+
+        <div className={styles.solutionsCta}>
+          <CtaButton className={styles.solutionsCtaBtn} />
         </div>
       </div>
     </section>

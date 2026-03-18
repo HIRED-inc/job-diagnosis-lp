@@ -67,7 +67,6 @@ function HeroSection() {
       <div className={styles.heroOverlay} />
       <div className={styles.heroContent}>
         <div className={styles.heroInner}>
-          <p className={styles.heroEyebrow}>エージェントの窓口 — for Business</p>
           <h1 className={styles.heroTitle}>
             紹介される<br />エージェントになる。
           </h1>

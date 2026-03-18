@@ -158,7 +158,6 @@ function ValueSection() {
       <div className={styles.sectionInner}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionLabel}>
-            <span className={styles.sectionLabelLine} />
             <span className={styles.sectionLabelText}>VALUE</span>
           </div>
           <h2 className={styles.sectionHeading}>
@@ -202,7 +201,6 @@ function ScreeningSection() {
       <div className={styles.sectionInner}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionLabel}>
-            <span className={styles.sectionLabelLine} />
             <span className={styles.sectionLabelText}>AGENCY SCREENING</span>
           </div>
           <h2 className={styles.sectionHeading}>ご利用には<br />審査があります</h2>
@@ -259,7 +257,6 @@ function FlowSection() {
       <div className={styles.sectionInner}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionLabel}>
-            <span className={styles.sectionLabelLine} />
             <span className={styles.sectionLabelText}>HOW IT WORKS</span>
           </div>
           <h2 className={styles.sectionHeading}>ご利用の流れ</h2>
@@ -309,7 +306,6 @@ function ClientsSection() {
       <div className={styles.sectionInner}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionLabel}>
-            <span className={styles.sectionLabelLine} />
             <span className={styles.sectionLabelText}>CLIENT</span>
           </div>
           <h2 className={styles.sectionHeading}>ご利用企業（一例）</h2>
@@ -336,9 +332,7 @@ function CtaSection() {
     <section id="contact" className={styles.ctaSection}>
       <div className={styles.sectionInner}>
         <div className={styles.sectionLabel} style={{ justifyContent: "center" }}>
-          <span className={styles.sectionLabelLine} />
           <span className={styles.sectionLabelText}>CONTACT</span>
-          <span className={styles.sectionLabelLine} />
         </div>
         <h2 className={styles.ctaHeading}>まずはお問い合わせください</h2>
         <p className={styles.ctaDesc}>

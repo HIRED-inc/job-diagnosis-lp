@@ -188,11 +188,11 @@ function ServiceSection() {
 function PersonIcon() {
   return (
     <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="40" cy="40" r="40" fill="#3d4f5c"/>
+      <circle cx="40" cy="40" r="40" fill="#aa9473"/>
       <circle cx="40" cy="26" r="11" fill="white"/>
       <path d="M18 64 C18 50 28 43 40 43 C52 43 62 50 62 64" fill="white"/>
-      <rect x="32" y="50" width="16" height="2.5" rx="1.5" fill="#3d4f5c"/>
-      <rect x="32" y="55" width="16" height="2.5" rx="1.5" fill="#3d4f5c"/>
+      <rect x="32" y="50" width="16" height="2.5" rx="1.5" fill="#aa9473"/>
+      <rect x="32" y="55" width="16" height="2.5" rx="1.5" fill="#aa9473"/>
     </svg>
   );
 }

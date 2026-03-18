@@ -305,6 +305,17 @@
   .sectionHeading { font-size: 2.25rem; }
 }
 
+.sectionIllustrationWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.sectionIllustration {
+  width: 200px;
+  height: auto;
+}
+
 .sectionDesc {
   margin-top: 1rem;
   color: #555;
@@ -516,6 +527,7 @@
   letter-spacing: 2px;
   border-radius: 2px;
   transition: opacity 0.15s;
+  width: 100%;
 }
 
 .ctaBtn:hover { opacity: 0.85; }

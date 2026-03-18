@@ -110,6 +110,9 @@ function ServiceSection() {
             <span className={styles.sectionLabelText}>SERVICE OVERVIEW</span>
           </div>
           <h2 className={styles.sectionHeading}>求職者を直接ご紹介</h2>
+          <div className={styles.sectionIllustrationWrap}>
+            <img src="/images/illustration-agent.png" alt="エージェントの窓口イラスト" className={styles.sectionIllustration} />
+          </div>
         </div>
 
         <div className={styles.itemList}>

@@ -85,8 +85,7 @@ export default function RegistrationPage() {
         {/* Header */}
         <div className={styles.header}>
           <div className={styles.logo}>
-            <div className={styles.logoBar} />
-            <span className={styles.logoText}>エージェントの窓口</span>
+            <img src="/images/a-logo.svg" alt="エージェントの窓口" width={140} />
           </div>
           <h1 className={styles.heading}>転職相談お申込みフォーム</h1>
         </div>

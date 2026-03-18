@@ -345,7 +345,7 @@ function ComparisonSection() {
                   "自社求人を優先的に薦められる",
                 ].map((text, i) => (
                   <li key={i} className={styles.comparisonFeatureItem}>
-                    <span className={styles.comparisonCheck} style={{ color: "#e07b39" }}>▲</span>
+                    <span className={styles.comparisonCheck} style={{ color: "#374151" }}>▲</span>
                     <span>{text}</span>
                   </li>
                 ))}

@@ -726,14 +726,26 @@
   }
 }
 
-.solutionsImgWrap {
+.solutionsImgWrapMobile {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .solutionsImgWrapMobile {
+    display: none;
+  }
+}
+
+.solutionsImgWrap {
+  display: none;
 }
 
 @media (min-width: 1024px) {
   .solutionsImgWrap {
+    display: flex;
     justify-content: center;
     flex-shrink: 0;
     width: 380px;

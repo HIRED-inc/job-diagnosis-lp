@@ -488,6 +488,13 @@ function SolutionsSection() {
             <h2 className={styles.solutionsHeading}>
               エージェントの窓口が<br />選ばれる理由
             </h2>
+            <div className={styles.solutionsImgWrapMobile}>
+              <img
+                src={ASSETS.solutionsIllustration}
+                alt="エージェントの窓口イラスト"
+                className={styles.solutionsIllustration}
+              />
+            </div>
             <div className={styles.solutionsRight}>
               {SOLUTIONS.map((item, i) => (
                 <div key={i}>

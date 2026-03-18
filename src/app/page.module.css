@@ -1469,7 +1469,7 @@
 
 .comparisonFeatureItem {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.5rem;
   font-size: 0.8125rem;
   color: #1f1f1f;
@@ -1478,7 +1478,7 @@
 
 .comparisonCheck {
   flex-shrink: 0;
-  font-size: 1.125rem !important;
+  font-size: 1rem !important;
   margin-top: 0;
   line-height: 1.4;
 }

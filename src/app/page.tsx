@@ -779,8 +779,8 @@ export default function Page() {
         <HeroSection />
         <ServiceSection />
         <ComparisonSection />
-        <ProblemsSection />
         <SolutionsSection />
+        <ProblemsSection />
         <StepsSection />
         <AgentsSection />
         <FaqSection />

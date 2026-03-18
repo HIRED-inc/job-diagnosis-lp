@@ -14,6 +14,7 @@ const ASSETS = {
   step02: "/images/step02.png",
   step03: "/images/step03.png",
   serviceIllustration: "/images/illustration.png",
+  problemsIllustration: "/images/illustration-agent.png",
   solutionsIllustration: "/images/illustration-celebrate.png",
   heroBg: "/images/hero.jpg",
 };
@@ -406,7 +407,7 @@ function ProblemsSection() {
 
         <div className={styles.sectionImgWrap}>
           <img
-            src={ASSETS.solutionsIllustration}
+            src={ASSETS.problemsIllustration}
             alt="エージェントの窓口イラスト"
             className={styles.sectionIllustration}
           />

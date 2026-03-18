@@ -85,18 +85,18 @@ function HeroSection() {
 const SERVICE_ITEMS = [
   {
     num: "01",
-    title: "独自の審査基準をクリアした求職者のみをご紹介",
-    body: "独自の審査基準をクリアした求職者のみが対象です。コンサルタントが状況を把握しながら、丁寧にご紹介いたします。",
+    title: "自社にマッチする求職者にだけ会える",
+    body: "御社の得意領域・年代・年収などを把握したアドバイザーが、御社が求める求職者をご紹介します。",
   },
   {
     num: "02",
-    title: "専任コンサルタントが面談し厳選した候補者のみを紹介",
-    body: "コンサルタントが候補者と面談を実施し、マッチング精度の高い候補者のみをエージェントの皆様にご紹介します。",
+    title: "専任コンサルタントが直接ご紹介",
+    body: "エージェントの窓口のコンサルタントが、求職者とコミュニケーションを取り、御社と一緒にサポートします。",
   },
   {
     num: "03",
-    title: "紹介後のサポートも継続対応",
-    body: "エージェントの窓口のコンサルタントが、ご紹介後のフォローアップも継続してサポートいたします。",
+    title: "求職者を徹底サポート",
+    body: "紹介後も求職者の転職活動をコンサルタントがサポートします。意向維持・不安解消を担い、御社の決定をサポートします。",
   },
 ];
 
@@ -109,23 +109,23 @@ function ServiceSection() {
             <span className={styles.sectionLabelLine} />
             <span className={styles.sectionLabelText}>SERVICE OVERVIEW</span>
           </div>
-          <h2 className={styles.sectionHeading}>求職者を直接ご紹介</h2>
+          <h2 className={styles.sectionHeading}>求職者に直接ご紹介</h2>
           <div className={styles.sectionIllustrationWrap}>
             <img src="/images/illustration-agent.png" alt="エージェントの窓口イラスト" className={styles.sectionIllustration} />
           </div>
+          <p className={styles.serviceDesc}>
+            コンサルタントが面談を行い、<br />御社にマッチした求職者をご紹介します。
+          </p>
         </div>
 
-        <div className={styles.itemList}>
+        <div className={styles.serviceCardList}>
           {SERVICE_ITEMS.map((item, i) => (
-            <div key={i}>
-              <div className={styles.item}>
-                <span className={styles.itemNumber}>{item.num}</span>
-                <div className={styles.itemContent}>
-                  <h3 className={styles.itemTitle}>{item.title}</h3>
-                  <p className={styles.itemBody}>{item.body}</p>
-                </div>
+            <div key={i} className={styles.serviceCard}>
+              <span className={styles.serviceCardNum}>{item.num}</span>
+              <div className={styles.serviceCardContent}>
+                <h3 className={styles.serviceCardTitle}>{item.title}</h3>
+                <p className={styles.itemBody}>{item.body}</p>
               </div>
-              {i < SERVICE_ITEMS.length - 1 && <hr className={styles.itemDivider} />}
             </div>
           ))}
         </div>

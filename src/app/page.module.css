@@ -993,7 +993,7 @@
 
 @media (min-width: 1024px) {
   .agentItem {
-    flex-direction: column;
+    flex-direction: center;
     align-items: flex-start;
     gap: 1.5rem;
     padding: 0;
@@ -1021,7 +1021,7 @@
 }
 
 .agentLogo {
-  width: 100%;
+  width: 100px;
   height: 36px;
   object-fit: contain;
 }
@@ -1035,7 +1035,7 @@
 
 @media (min-width: 768px) {
   .agentDescription {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
 }
 
@@ -1065,11 +1065,11 @@
 @media (min-width: 1024px) {
   .agentsNote {
     text-align: left;
-    border: 1px solid #e5e0d8;
+    border: 1px solid #E4AD5A;
     border-radius: 4px;
     padding: 1rem 1.5rem;
     font-size: 0.875rem;
-    background: #ffffff;
+    background: #F0E7D9;
     margin-top: 3rem;
   }
 }

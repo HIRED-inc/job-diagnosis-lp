@@ -160,16 +160,17 @@ function ServiceSection() {
             <p className={styles.serviceNote}>
               ※本サービスは転職エージェントではありません。
             </p>
-            <CtaButton />
-          </div>
 
-          {/* Illustration */}
-          <div className={styles.serviceIllustrationWrap}>
-            <img
-              src={ASSETS.serviceIllustration}
-              alt="転職相談イラスト"
-              className={styles.serviceIllustration}
-            />
+            {/* Illustration */}
+            <div className={styles.serviceIllustrationWrap}>
+              <img
+                src={ASSETS.serviceIllustration}
+                alt="転職相談イラスト"
+                className={styles.serviceIllustration}
+              />
+            </div>
+
+            <CtaButton />
           </div>
         </div>
       </div>

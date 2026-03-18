@@ -726,6 +726,13 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .solutionTitle {
+    font-size: 1.25rem;
+    white-space: nowrap;
+  }
+}
+
 .solutionsDivider {
   border: 0;
   border-top: 1px solid #dbd6ce;

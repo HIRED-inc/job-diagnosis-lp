@@ -1554,14 +1554,14 @@
   grid-template-columns: repeat(2, auto);
   justify-content: start;
   gap: 1.5rem 3rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 1024px) {
   .footerLinks {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 

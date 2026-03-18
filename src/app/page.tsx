@@ -17,6 +17,7 @@ const ASSETS = {
   problemsIllustration: "/images/illustration-agent.png",
   solutionsIllustration: "/images/illustration-celebrate.png",
   heroBg: "/images/hero.jpg",
+  heroVideo: "/images/hero-mov.mp4",
 };
 
 // ─── Sub-components ────────────────────────────────────────────────────────
@@ -110,10 +111,14 @@ function Header() {
 function HeroSection() {
   return (
     <section className={styles.heroSection}>
-      {/* Background image */}
-      <div
+      {/* Background video */}
+      <video
         className={styles.heroBg}
-        style={{ backgroundImage: `url(${ASSETS.heroBg})` }}
+        src={ASSETS.heroVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
       />
       {/* Overlay */}
       <div className={styles.heroOverlay} />

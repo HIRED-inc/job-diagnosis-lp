@@ -253,7 +253,6 @@ function ComparisonSection() {
           >
             {/* Card header */}
             <div className={styles.comparisonCardHeader} style={{ backgroundColor: "#aa9473" }}>
-              <span className={styles.comparisonCardHeaderIcon}>□</span>
               <span>エージェントの窓口</span>
             </div>
 

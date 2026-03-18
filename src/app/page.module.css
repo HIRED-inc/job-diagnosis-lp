@@ -1349,6 +1349,18 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .comparisonGrid {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .comparisonCard {
+    width: 420px;
+    flex-shrink: 0;
+  }
+}
+
 /* Desktop: always show both cards */
 @media (min-width: 768px) {
   .comparisonGrid > div {
@@ -1482,6 +1494,12 @@
   gap: 0.75rem;
   padding: 0 1rem 1.5rem;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .comparisonAgentCards {
+    gap: 2rem;
+  }
 }
 
 .comparisonAgentCard {

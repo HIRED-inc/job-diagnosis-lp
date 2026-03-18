@@ -466,23 +466,75 @@
 }
 
 /* ─── Clients ────────────────────────────────────────────────────────────── */
-.clientLogos {
+/* Mobile: 縦並び（ロゴ左・説明右）/ Desktop: 3カラム（ロゴ上・説明下） */
+.clientList {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem 3rem;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .clientList {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+}
+
+.clientItem {
+  display: flex;
   align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .clientItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex: 1;
+  }
 }
 
 .clientLogoWrap {
+  flex-shrink: 0;
+  width: 100px;
   display: flex;
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .clientLogoWrap {
+    width: auto;
+    height: 2.5rem;
+  }
+}
+
 .clientLogo {
-  height: 2rem;
+  max-width: 100px;
+  max-height: 2.5rem;
   width: auto;
+  height: auto;
   object-fit: contain;
-  opacity: 0.85;
+}
+
+@media (min-width: 768px) {
+  .clientLogo {
+    max-width: 140px;
+  }
+}
+
+.clientDesc {
+  color: #555;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .clientDesc {
+    font-size: 0.875rem;
+  }
 }
 
 /* ─── CTA Section ────────────────────────────────────────────────────────── */

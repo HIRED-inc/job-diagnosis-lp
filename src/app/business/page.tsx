@@ -287,9 +287,21 @@ function FlowSection() {
 
 // ─── Clients ───────────────────────────────────────────────────────────────
 const CLIENTS = [
-  { logo: ASSETS.logoAssign, alt: "アサイン" },
-  { logo: ASSETS.logoProcommit, alt: "ProCommit" },
-  { logo: ASSETS.logoIzul, alt: "izul" },
+  {
+    logo: ASSETS.logoAssign,
+    alt: "アサイン",
+    description: "社内MVPを受賞した優秀なキャリアアドバイザーが面談を担当します。本来は指名できない担当者をご紹介します。",
+  },
+  {
+    logo: ASSETS.logoProcommit,
+    alt: "ProCommit",
+    description: "プロコミットキャリアの代表が面談を担当します。丁寧なキャリア面談と高い実績を持っています。",
+  },
+  {
+    logo: ASSETS.logoIzul,
+    alt: "izul",
+    description: "イズルの代表と社内のトップコンサルタントが面談を担当します。手厚い面談と年収アップが得意な転職エージェントです。",
+  },
 ];
 
 function ClientsSection() {
@@ -299,15 +311,18 @@ function ClientsSection() {
         <div className={styles.sectionHeader}>
           <div className={styles.sectionLabel}>
             <span className={styles.sectionLabelLine} />
-            <span className={styles.sectionLabelText}>TRUST</span>
+            <span className={styles.sectionLabelText}>CLIENT</span>
           </div>
           <h2 className={styles.sectionHeading}>ご利用企業（一例）</h2>
         </div>
 
-        <div className={styles.clientLogos}>
+        <div className={styles.clientList}>
           {CLIENTS.map((c) => (
-            <div key={c.alt} className={styles.clientLogoWrap}>
-              <img src={c.logo} alt={c.alt} className={styles.clientLogo} />
+            <div key={c.alt} className={styles.clientItem}>
+              <div className={styles.clientLogoWrap}>
+                <img src={c.logo} alt={c.alt} className={styles.clientLogo} />
+              </div>
+              <p className={styles.clientDesc}>{c.description}</p>
             </div>
           ))}
         </div>

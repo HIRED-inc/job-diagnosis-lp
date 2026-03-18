@@ -137,7 +137,7 @@ function HeroSection() {
             <span className={styles.heroSubLineDash} />
             <p className={styles.heroSubText}>でも、転職できるかわからない。</p>
           </div>
-          <CtaButton className={styles.heroCta} />
+          <CtaButton />
         </div>
       </div>
     </section>

@@ -754,24 +754,28 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
-        {/* Footer links */}
-        <div className={styles.footerLinks}>
-          <a href="#" className={styles.footerLink}>利用規約</a>
-          <a href="#" className={styles.footerLink}>プライバシーポリシー</a>
-          <a href="#" className={styles.footerLink}>お問い合わせ</a>
-          <a href="#" className={styles.footerLink}>運営会社</a>
-        </div>
-
-        {/* Logo + Copyright */}
+        {/* Logo + Copyright (shown left on desktop) */}
         <div className={styles.footerBottom}>
-          <img
-            src={ASSETS.logomark}
-            alt="エージェントの窓口"
-            className={styles.footerLogomark}
-          />
-          <p className={styles.footerCopyright}>
-            Copyright © HIRED inc All Rights Reserved.
-          </p>
+          <div className={styles.footerLogoWrap}>
+            <img
+              src={ASSETS.logomark}
+              alt="エージェントの窓口"
+              className={styles.footerLogomark}
+            />
+            <p className={styles.footerCopyright}>
+              Copyright © HIRED inc All Rights Reserved.
+            </p>
+          </div>
+
+          {/* Footer links */}
+          <div className={styles.footerLinks}>
+            <a href="#" className={styles.footerLink}>運営会社</a>
+            <a href="#" className={styles.footerLink}>採用情報</a>
+            <a href="#" className={styles.footerLink}>利用規約</a>
+            <a href="#" className={styles.footerLink}>プライバシーポリシー</a>
+            <a href="#" className={styles.footerLink}>お問い合わせ</a>
+            <a href="#" className={styles.footerLink}>サイトマップ</a>
+          </div>
         </div>
       </div>
     </footer>

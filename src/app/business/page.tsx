@@ -8,7 +8,7 @@ const ASSETS = {
   logoAssign: "/images/logo-assign.png",
   logoProcommit: "/images/logo-procommit.png",
   logoIzul: "/images/logo-izul.png",
-  heroBg: "/images/hero.jpg",
+  heroVideo: "/images/hero-mov.mp4",
 };
 
 // ─── Header ───────────────────────────────────────────────────────────────
@@ -56,7 +56,14 @@ function Header() {
 function HeroSection() {
   return (
     <section className={styles.heroSection}>
-      <div className={styles.heroBg} style={{ backgroundImage: `url(${ASSETS.heroBg})` }} />
+      <video
+        className={styles.heroBg}
+        src={ASSETS.heroVideo}
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
       <div className={styles.heroOverlay} />
       <div className={styles.heroContent}>
         <div className={styles.heroInner}>

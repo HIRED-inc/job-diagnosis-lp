@@ -994,7 +994,7 @@
   text-align: left;
   padding: 1.25rem 1.25rem;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   gap: 1rem;
   background: none;

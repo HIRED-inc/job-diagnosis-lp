@@ -605,7 +605,7 @@ function StepsSection() {
         </div>
 
         <div className={styles.stepsCta}>
-          <CtaButtonCenter />
+          <CtaButton className={styles.stepsCtaBtn} />
         </div>
       </div>
     </section>
@@ -750,7 +750,7 @@ function FaqSection() {
         </div>
 
         <div className={styles.faqCta}>
-          <CtaButtonCenter />
+          <CtaButton className={styles.faqCtaBtn} />
         </div>
 
         {/* Disclaimers */}

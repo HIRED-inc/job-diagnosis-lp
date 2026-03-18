@@ -455,7 +455,9 @@
 
 @media (min-width: 1024px) {
   .serviceCta {
-    max-width: none;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 3rem;
   }
 }
@@ -904,11 +906,20 @@
 
 .stepsCta {
   margin-top: 3rem;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .stepsCta {
     margin-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stepsCtaBtn {
+    max-width: 768px;
+    width: 100%;
   }
 }
 
@@ -1189,6 +1200,15 @@
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .faqCtaBtn {
+    max-width: 768px;
+    width: 100%;
+  }
 }
 
 .disclaimers {

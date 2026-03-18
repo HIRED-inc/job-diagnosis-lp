@@ -97,9 +97,8 @@ function Header() {
       {menuOpen && (
         <nav className={styles.mobileMenu}>
           <a href="#service" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>サービス概要</a>
-          <a href="#solutions" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>エージェントの窓口の強み</a>
           <a href="#flow" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>ご利用の流れ</a>
-          <a href="#agents" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>紹介できるエージェント</a>
+          <a href="#agents" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>利用企業</a>
           <a href="#faq" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLinkLast}>よくある質問</a>
         </nav>
       )}
@@ -577,10 +576,7 @@ function StepsSection() {
                 {step.body}
               </p>
 
-              {/* Arrow between steps */}
-              {i < STEPS.length - 1 && (
-                <span className={styles.stepArrow}>↓</span>
-              )}
+
             </div>
           ))}
         </div>

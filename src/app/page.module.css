@@ -485,7 +485,7 @@
 }
 
 .sectionIllustration {
-  width: 200px;
+  width: 140px;
   height: auto;
 }
 
@@ -514,6 +514,7 @@
 }
 
 .sectionHeading {
+  text-align: left;
   margin-top: 1rem;
   font-size: 1.5rem;
   font-weight: 500;
@@ -823,18 +824,6 @@
   text-align: left;
 }
 
-.stepArrow {
-  color: #aa9473;
-  font-size: 1.875rem;
-  margin-top: 1.5rem;
-  display: block;
-}
-
-@media (min-width: 768px) {
-  .stepArrow {
-    display: none;
-  }
-}
 
 .stepsCta {
   margin-top: 3rem;

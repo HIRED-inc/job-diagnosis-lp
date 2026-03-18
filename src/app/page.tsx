@@ -181,10 +181,12 @@ function ServiceSection() {
 
 function PersonIcon() {
   return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="18" cy="18" r="18" fill="#e8dfd4" />
-      <circle cx="18" cy="13" r="5" fill="#aa9473" />
-      <path d="M7 30c0-6.075 4.925-11 11-11s11 4.925 11 11" fill="#aa9473" />
+    <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="40" fill="#3d4f5c"/>
+      <circle cx="40" cy="26" r="11" fill="white"/>
+      <path d="M18 64 C18 50 28 43 40 43 C52 43 62 50 62 64" fill="white"/>
+      <rect x="32" y="50" width="16" height="2.5" rx="1.5" fill="#3d4f5c"/>
+      <rect x="32" y="55" width="16" height="2.5" rx="1.5" fill="#3d4f5c"/>
     </svg>
   );
 }
@@ -257,12 +259,14 @@ function ComparisonSection() {
             </div>
 
             {/* Arrow */}
-            <div className={styles.comparisonArrow}>∨</div>
+            <div className={styles.comparisonArrow}>
+              <span className="material-icons">keyboard_arrow_down</span>
+            </div>
 
             {/* Feature box */}
             <div className={styles.comparisonFeatureBox} style={{ borderColor: "#aa9473" }}>
-              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#f3ede3", color: "#aa9473" }}>
-                エージェントの窓口
+              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#f3ede3" }}>
+                <img src={ASSETS.logomark} alt="エージェントの窓口" className={styles.comparisonFeatureLogo} />
               </div>
               <ul className={styles.comparisonFeatureList}>
                 {[
@@ -272,7 +276,7 @@ function ComparisonSection() {
                   "中立な立場で転職活動をサポート",
                 ].map((text, i) => (
                   <li key={i} className={styles.comparisonFeatureItem}>
-                    <span className={styles.comparisonCheck} style={{ color: "#63ab3f" }}>✓</span>
+                    <span className={`${styles.comparisonCheck} material-icons`} style={{ color: "#63ab3f" }}>check_circle</span>
                     <span>{text}</span>
                   </li>
                 ))}
@@ -280,7 +284,9 @@ function ComparisonSection() {
             </div>
 
             {/* Arrow */}
-            <div className={styles.comparisonArrow}>∨</div>
+            <div className={styles.comparisonArrow}>
+              <span className="material-icons">keyboard_arrow_down</span>
+            </div>
 
             {/* エージェント badge */}
             <div className={styles.comparisonBadgeRow}>
@@ -321,11 +327,13 @@ function ComparisonSection() {
             </div>
 
             {/* Arrow */}
-            <div className={styles.comparisonArrow}>∨</div>
+            <div className={styles.comparisonArrow}>
+              <span className="material-icons">keyboard_arrow_down</span>
+            </div>
 
             {/* Feature box */}
             <div className={styles.comparisonFeatureBox} style={{ borderColor: "#6b6b6b" }}>
-              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#4a4a4a", color: "#ffffff" }}>
+              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#4a4a4a", color: "#ffffff", textAlign: "center" }}>
                 従来の転職サービス
               </div>
               <ul className={styles.comparisonFeatureList}>
@@ -344,7 +352,9 @@ function ComparisonSection() {
             </div>
 
             {/* Arrow */}
-            <div className={styles.comparisonArrow}>∨</div>
+            <div className={styles.comparisonArrow}>
+              <span className="material-icons">keyboard_arrow_down</span>
+            </div>
 
             {/* エージェント badge */}
             <div className={styles.comparisonBadgeRow}>

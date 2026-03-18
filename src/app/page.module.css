@@ -1234,10 +1234,15 @@
 
 /* Arrow */
 .comparisonArrow {
-  font-size: 1.375rem;
   color: #bbb;
   padding: 0.25rem 0;
   line-height: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.comparisonArrow .material-icons {
+  font-size: 2rem;
 }
 
 /* Feature box */
@@ -1250,9 +1255,18 @@
 }
 
 .comparisonFeatureTitle {
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   font-size: 0.8125rem;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comparisonFeatureLogo {
+  height: 2rem;
+  width: auto;
+  object-fit: contain;
 }
 
 .comparisonFeatureList {
@@ -1275,8 +1289,9 @@
 
 .comparisonCheck {
   flex-shrink: 0;
-  font-size: 0.875rem;
-  margin-top: 0.0625rem;
+  font-size: 1.125rem !important;
+  margin-top: 0;
+  line-height: 1.4;
 }
 
 /* Agent note */
@@ -1299,6 +1314,11 @@
   flex-direction: column;
   align-items: center;
   gap: 0.375rem;
+}
+
+.comparisonAgentCard svg {
+  width: 48px;
+  height: 48px;
 }
 
 .comparisonAgentLabel {

@@ -165,6 +165,9 @@ function ValueSection() {
           <h2 className={styles.sectionHeading}>
             コストを抑えて<br />マッチングを最大化
           </h2>
+          <div className={styles.sectionIllustrationWrap}>
+            <img src="/images/illustration-celebrate.png" alt="コスト削減イラスト" className={styles.sectionIllustration} />
+          </div>
         </div>
 
         <div className={styles.itemList}>

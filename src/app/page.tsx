@@ -277,7 +277,7 @@ function ComparisonSection() {
                   "中立な立場で転職活動をサポート",
                 ].map((text, i) => (
                   <li key={i} className={styles.comparisonFeatureItem}>
-                    <span className={`${styles.comparisonCheck} material-icons`} style={{ color: "#63ab3f" }}>check_circle</span>
+                    <span className={`${styles.comparisonCheck} material-icons`} style={{ color: "#aa9473" }}>check_circle</span>
                     <span>{text}</span>
                   </li>
                 ))}

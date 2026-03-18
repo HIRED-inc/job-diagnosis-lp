@@ -449,7 +449,7 @@
 
 @media (min-width: 1024px) {
   .serviceIllustration {
-    max-width: 440px;
+    max-width: 400px;
   }
 }
 
@@ -562,7 +562,7 @@
 @media (min-width: 1024px) {
   .problemsLayout {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     gap: 3rem;
   }
 }
@@ -684,7 +684,7 @@
 .solutionsLayout {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 3rem;
 }
 
@@ -746,7 +746,7 @@
 
 @media (min-width: 1024px) {
   .solutionsIllustration {
-    max-width: 340px;
+    max-width: 320px;
   }
 }
 

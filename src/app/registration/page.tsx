@@ -301,7 +301,7 @@ export default function RegistrationPage() {
                 </div>
                 <div className={styles.qDivider} />
                 <div className={styles.privacyBox}>
-                  お申し込みの前に、<a href="#">個人情報の取り扱いについて</a>をご一読の上、同意いただけますようお願いいたします。
+                  お申し込みの前に、<a href="https://hired.co.jp/privacy_policy" target="_blank">個人情報の取り扱いについて</a>をご一読の上、同意いただけますようお願いいたします。
                 </div>
                 <label className={styles.checkboxWrap}>
                   <input type="checkbox" checked={privacy} onChange={(e) => setPrivacy(e.target.checked)} />

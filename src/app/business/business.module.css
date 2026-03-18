@@ -56,13 +56,13 @@
   transition: color 0.15s;
 }
 
-.headerNavLink:hover { color: #aa9473; }
+.headerNavLink:hover { color: #E09A30; }
 
 .ctaNavBtn {
   display: inline-flex;
   align-items: center;
   padding: 8px 20px;
-  background: #aa9473;
+  background: #E09A30;
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
@@ -180,7 +180,7 @@
 }
 
 .heroEyebrow {
-  color: #aa9473;
+  color: #E09A30;
   font-size: 0.8125rem;
   font-weight: 500;
   letter-spacing: 3px;
@@ -281,11 +281,11 @@
   display: block;
   height: 1px;
   width: 3.5rem;
-  background-color: #aa9473;
+  background-color: #E09A30;
 }
 
 .sectionLabelText {
-  color: #aa9473;
+  color: #E09A30;
   font-size: 0.875rem;
   letter-spacing: 2px;
 }
@@ -332,7 +332,7 @@
 
 /* Item number — same as page.tsx .itemNumber */
 .itemNumber {
-  color: #aa9473;
+  color: #E09A30;
   font-size: 0.875rem;
   font-weight: 400;
   font-family: var(--font-dm-serif-display);
@@ -400,7 +400,7 @@
 }
 
 .checkIcon {
-  color: #aa9473;
+  color: #E09A30;
   font-size: 1.25rem !important;
   flex-shrink: 0;
 }
@@ -434,7 +434,7 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 50%;
-  background: #aa9473;
+  background: #E09A30;
   color: #ffffff;
   font-size: 0.75rem;
   font-weight: 700;
@@ -508,7 +508,7 @@
   align-items: center;
   justify-content: center;
   padding: 18px 40px;
-  background: #aa9473;
+  background: #E09A30;
   color: #ffffff;
   text-decoration: none;
   font-size: 1rem;
@@ -593,4 +593,4 @@
   transition: color 0.15s;
 }
 
-.footerLink:hover { color: #aa9473; }
+.footerLink:hover { color: #E09A30; }

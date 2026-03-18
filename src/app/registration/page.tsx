@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./page.module.css";
+import styles from "./registration.module.css";
 
 const TOTAL_STEPS = 7;
 const PROGRESS_VALUES = [14, 28, 42, 57, 71, 85, 100];

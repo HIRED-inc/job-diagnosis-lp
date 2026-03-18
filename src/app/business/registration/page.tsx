@@ -320,7 +320,7 @@ export default function BusinessRegistrationPage() {
                 <div className={styles.privacyBox}>
                   <p>お申し込みいただいた内容をもとに、弊社にて審査を行います。審査の結果、ご利用いただけない場合もございますので、あらかじめご了承ください。</p>
                   <br />
-                  <p>また、<a href="#" target="_blank">個人情報の取り扱いについて</a>をご一読の上、同意いただけますようお願いいたします。</p>
+                  <p>また、<a href="https://hired.co.jp/privacy_policy" target="_blank">個人情報の取り扱いについて</a>をご一読の上、同意いただけますようお願いいたします。</p>
                 </div>
                 <label className={styles.checkboxWrap}>
                   <input type="checkbox" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} />

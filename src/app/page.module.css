@@ -1357,6 +1357,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .comparisonCtaBtn {
+    max-width: none;
+  }
+}
+
 /* ─── Footer ────────────────────────────────────────────────────────────── */
 .footer {
   background-color: #1f1f1f;

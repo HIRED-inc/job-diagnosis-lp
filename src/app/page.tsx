@@ -384,7 +384,7 @@ function ComparisonSection() {
 
         {/* CTA */}
         <div className={styles.comparisonCta}>
-          <CtaButtonCenter />
+          <CtaButton className={styles.comparisonCtaBtn} />
         </div>
       </div>
     </section>

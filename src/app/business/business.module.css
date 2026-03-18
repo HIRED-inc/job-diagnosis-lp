@@ -175,8 +175,24 @@
   justify-content: center;
 }
 
+@media (max-width: 767px) {
+  .heroContent {
+    justify-content: flex-end;
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+  }
+}
+
 .heroInner {
   max-width: 36rem;
+}
+
+@media (max-width: 767px) {
+  .heroInner {
+    width: 100%;
+    max-width: none;
+  }
 }
 
 .heroEyebrow {
@@ -197,6 +213,13 @@
   font-family: var(--font-noto-serif-jp);
 }
 
+@media (max-width: 767px) {
+  .heroTitle {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .heroTitle { font-size: 3rem; }
 }
@@ -211,6 +234,13 @@
   line-height: 1.8;
   margin-bottom: 2rem;
   letter-spacing: 1px;
+}
+
+@media (max-width: 767px) {
+  .heroSub {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 .heroBtn {
@@ -230,6 +260,13 @@
 }
 
 .heroBtn:hover { opacity: 0.85; }
+
+@media (max-width: 767px) {
+  .heroBtn {
+    border-radius: 0;
+    height: 60px;
+  }
+}
 
 /* ─── Section commons ────────────────────────────────────────────────────── */
 /* (mirrors page.tsx patterns) */

@@ -79,7 +79,7 @@ function Header() {
           <a href="#flow" className={styles.headerNavLink}>ご利用の流れ</a>
           <a href="#agents" className={styles.headerNavLink}>紹介できるエージェント</a>
           <a href="#faq" className={styles.headerNavLink}>よくある質問</a>
-          <a href="#for-agents" className={styles.headerNavLink}>エージェントの皆様へ</a>
+          <a href="/business" className={styles.headerNavLink}>エージェントの皆様へ</a>
         </nav>
 
         {/* Mobile hamburger */}
@@ -104,7 +104,7 @@ function Header() {
           <a href="#flow" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>ご利用の流れ</a>
           <a href="#agents" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>紹介できるエージェント</a>
           <a href="#faq" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLink}>よくある質問</a>
-          <a href="#for-agents" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLinkLast}>エージェントの皆様へ</a>
+          <a href="/business" onClick={() => setMenuOpen(false)} className={styles.mobileMenuLinkLast}>エージェントの皆様へ</a>
         </nav>
       )}
     </header>

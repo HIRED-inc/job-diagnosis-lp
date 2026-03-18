@@ -14,7 +14,7 @@ const ASSETS = {
   step02: "/images/step02.png",
   step03: "/images/step03.png",
   serviceIllustration: "/images/illustration.png",
-  solutionsIllustration: "/images/illustration-agent.png",
+  solutionsIllustration: "/images/illustration-celebrate.png",
   heroBg: "/images/hero.jpg",
 };
 
@@ -405,6 +405,14 @@ function ProblemsSection() {
           <h2 className={styles.sectionHeading}>
             こんな人におすすめ
           </h2>
+        </div>
+
+        <div className={styles.sectionImgWrap}>
+          <img
+            src={ASSETS.solutionsIllustration}
+            alt="エージェントの窓口イラスト"
+            className={styles.sectionIllustration}
+          />
         </div>
 
         <div className={styles.problemsList}>

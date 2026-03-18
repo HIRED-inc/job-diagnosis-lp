@@ -1612,6 +1612,7 @@
 }
 
 .footerLink {
+  width:160px;
   color: #fff;
   text-decoration: none;
   transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);

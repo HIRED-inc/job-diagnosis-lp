@@ -194,14 +194,14 @@ function PersonIcon() {
 
 function BuildingIcon() {
   return (
-    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="18" cy="18" r="18" fill="#d8d8d8" />
-      <rect x="10" y="10" width="16" height="18" rx="1" fill="#6b6b6b" />
-      <rect x="13" y="13" width="3" height="3" fill="white" />
-      <rect x="20" y="13" width="3" height="3" fill="white" />
-      <rect x="13" y="19" width="3" height="3" fill="white" />
-      <rect x="20" y="19" width="3" height="3" fill="white" />
-      <rect x="15" y="24" width="6" height="4" fill="#4a4a4a" />
+    <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="40" cy="40" r="40" fill="#374151"/>
+      <rect x="22" y="20" width="36" height="42" rx="2" fill="white"/>
+      <rect x="28" y="28" width="8" height="8" fill="#374151"/>
+      <rect x="44" y="28" width="8" height="8" fill="#374151"/>
+      <rect x="28" y="42" width="8" height="8" fill="#374151"/>
+      <rect x="44" y="42" width="8" height="8" fill="#374151"/>
+      <rect x="34" y="54" width="12" height="8" fill="#374151"/>
     </svg>
   );
 }
@@ -316,13 +316,13 @@ function ComparisonSection() {
             data-desktop-visible="true"
           >
             {/* Card header */}
-            <div className={styles.comparisonCardHeader} style={{ backgroundColor: "#4a4a4a" }}>
+            <div className={styles.comparisonCardHeader} style={{ backgroundColor: "#9ca3af" }}>
               <span>従来の転職サービス</span>
             </div>
 
             {/* 求職者 badge */}
             <div className={styles.comparisonBadgeRow}>
-              <span className={styles.comparisonBadgeOutline} style={{ borderColor: "#6b6b6b", color: "#6b6b6b" }}>
+              <span className={styles.comparisonBadgeOutline} style={{ borderColor: "#9ca3af", color: "#9ca3af" }}>
                 求職者
               </span>
             </div>
@@ -333,8 +333,8 @@ function ComparisonSection() {
             </div>
 
             {/* Feature box */}
-            <div className={styles.comparisonFeatureBox} style={{ borderColor: "#6b6b6b" }}>
-              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#4a4a4a", color: "#ffffff", textAlign: "center" }}>
+            <div className={styles.comparisonFeatureBox} style={{ borderColor: "#9ca3af" }}>
+              <div className={styles.comparisonFeatureTitle} style={{ backgroundColor: "#f3f4f6", color: "#374151", textAlign: "center" }}>
                 従来の転職サービス
               </div>
               <ul className={styles.comparisonFeatureList}>
@@ -359,7 +359,7 @@ function ComparisonSection() {
 
             {/* エージェント badge */}
             <div className={styles.comparisonBadgeRow}>
-              <span className={styles.comparisonBadgeFilled} style={{ backgroundColor: "#6b6b6b" }}>
+              <span className={styles.comparisonBadgeFilled} style={{ backgroundColor: "#9ca3af" }}>
                 転職エージェント
               </span>
             </div>

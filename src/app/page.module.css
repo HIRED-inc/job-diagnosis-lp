@@ -182,7 +182,7 @@
   display: block;
   width: 1.5rem;
   height: 2px;
-  background-color: #1f1f1f;
+  background-color: #aa9473;
   transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1381,13 +1381,13 @@
 }
 
 .comparisonTabActive {
-  background-color: #1f1f1f;
+  background-color: #aa9473;
   color: #ffffff;
   font-weight: 700;
 }
 
 .comparisonTabActiveDark {
-  background-color: #1f1f1f;
+  background-color: #aa9473;
   color: #ffffff;
   font-weight: 700;
 }
@@ -1608,7 +1608,7 @@
 
 /* ─── Footer ────────────────────────────────────────────────────────────── */
 .footer {
-  background-color: #1f1f1f;
+  background-color: #aa9473;
   color: #ffffff;
 }
 

@@ -1359,7 +1359,9 @@
 
 @media (min-width: 1024px) {
   .comparisonCtaBtn {
-    max-width: none;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

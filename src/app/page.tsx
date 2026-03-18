@@ -67,19 +67,16 @@ function Header() {
             alt="エージェントの窓口 ロゴ"
             className={styles.headerLogomark}
           />
-          <img
-            src={ASSETS.logoText}
-            alt="エージェントの窓口"
-            className={styles.headerLogoText}
-          />
         </a>
 
         {/* Desktop Nav */}
         <nav className={styles.headerNav}>
           <a href="#service" className={styles.headerNavLink}>サービス概要</a>
+          <a href="#solutions" className={styles.headerNavLink}>エージェントの窓口の強み</a>
           <a href="#flow" className={styles.headerNavLink}>ご利用の流れ</a>
-          <a href="#agents" className={styles.headerNavLink}>利用企業</a>
+          <a href="#agents" className={styles.headerNavLink}>紹介できるエージェント</a>
           <a href="#faq" className={styles.headerNavLink}>よくある質問</a>
+          <a href="#for-agents" className={styles.headerNavLink}>エージェントの皆様へ</a>
         </nav>
 
         {/* Mobile hamburger */}

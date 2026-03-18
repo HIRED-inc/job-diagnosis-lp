@@ -962,6 +962,21 @@
   margin-right: auto;
 }
 
+@media (min-width: 1024px) {
+  .agentsList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    max-width: none;
+  }
+  .agentItemWrap {
+    display: contents;
+  }
+  .agentsDivider {
+    display: none;
+  }
+}
+
 .agentItem {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -976,6 +991,15 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .agentItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 0;
+  }
+}
+
 .agentLogoWrap {
   flex-shrink: 0;
   width: 88px;
@@ -984,6 +1008,15 @@
 @media (min-width: 768px) {
   .agentLogoWrap {
     width: 120px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .agentLogoWrap {
+    width: auto;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -1011,6 +1044,11 @@
   border-top: 1px solid #dbd6ce;
 }
 
+.agentsNoteHighlight {
+  color: #E09A30;
+  font-weight: 700;
+}
+
 .agentsNote {
   margin-top: 2rem;
   text-align: center;
@@ -1024,13 +1062,34 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .agentsNote {
+    text-align: left;
+    border: 1px solid #e5e0d8;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    font-size: 0.875rem;
+    background: #ffffff;
+    margin-top: 3rem;
+  }
+}
+
 .agentsCta {
   margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {
   .agentsCta {
     margin-top: 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .agentsCtaBtn {
+    max-width: 768px;
+    width: 100%;
   }
 }
 

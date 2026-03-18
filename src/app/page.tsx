@@ -648,7 +648,7 @@ function AgentsSection() {
 
         <div className={styles.agentsList}>
           {AGENTS.map((agent, i) => (
-            <div key={i}>
+            <div key={i} className={styles.agentItemWrap}>
               <div className={styles.agentItem}>
                 {/* Logo */}
                 <div className={styles.agentLogoWrap}>
@@ -668,14 +668,14 @@ function AgentsSection() {
               )}
             </div>
           ))}
-
-          <p className={styles.agentsNote}>
-            その他、厳選したエージェント約20社からあなたに合った担当者をご紹介します。
-          </p>
         </div>
 
+        <p className={styles.agentsNote}>
+          審査通過率は約<span className={styles.agentsNoteHighlight}>30%</span>。厳しい基準を設けることで、求職者が安心して紹介を受けられるサービスを維持しています。
+        </p>
+
         <div className={styles.agentsCta}>
-          <CtaButtonCenter />
+          <CtaButton className={styles.agentsCtaBtn} />
         </div>
       </div>
     </section>

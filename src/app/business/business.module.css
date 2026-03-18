@@ -584,11 +584,10 @@
 
 .ctaBtn:hover { opacity: 0.85; }
 
-/* ─── Footer (exact mirror of page.tsx footer styles) ────────────────────── */
+/* ─── Footer ────────────────────────────────────────────────────────────── */
 .footer {
   background-color: #1f1f1f;
   color: #ffffff;
-  border-top: 1px solid #333;
 }
 
 .footerInner {
@@ -625,7 +624,7 @@
 
 .footerLogomark {
   height: 2rem;
-  width: auto;
+  width: 100px;
   opacity: 0.8;
 }
 
@@ -640,21 +639,22 @@
   grid-template-columns: repeat(2, auto);
   justify-content: start;
   gap: 1.5rem 3rem;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 @media (min-width: 1024px) {
   .footerLinks {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
   }
 }
 
 .footerLink {
+  width: 160px;
   color: #fff;
   text-decoration: none;
-  transition: color 0.15s;
+  transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footerLink:hover { color: #E09A30; }
+.footerLink:hover { color: #ffffff; }

@@ -1344,10 +1344,7 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem;
 }
 
 .footerBottom {
@@ -1368,6 +1365,13 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .footerLogoWrap {
+    order: 0;
+  }
 }
 
 .footerLogomark {
@@ -1377,8 +1381,9 @@
 }
 
 .footerCopyright {
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 0.75rem;
+  color: #ffffff);
+  font-size: 0.5rem;
+  font-weight: 600;
 }
 
 .footerLinks {
@@ -1398,7 +1403,7 @@
 }
 
 .footerLink {
-  color: rgba(255, 255, 255, 0.7);
+  color: #fff;
   text-decoration: none;
   transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }

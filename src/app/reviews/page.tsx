@@ -84,7 +84,6 @@ export default function ReviewsPage() {
         <header className={styles.header}>
           <div className={styles.logoWrap}>
             <img src="/images/a-logo.svg" alt="エージェントの窓口" className={styles.logo} />
-            <span className={styles.logoText}>エージェントの窓口</span>
           </div>
           <p className={styles.headerDesc}>
             エージェントへの評価・ご感想をお寄せください。<br />

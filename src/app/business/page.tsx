@@ -73,7 +73,7 @@ function HeroSection() {
           <p className={styles.heroSub}>
             優秀な求職者を発掘し、貴社のサービスに<br />登録が到来する求人サービスです。
           </p>
-          <a href="#contact" className={styles.heroBtn}>お申し込み・お問い合わせ</a>
+          <a href="/business/registration" className={styles.heroBtn}>お申し込み・お問い合わせ</a>
         </div>
       </div>
     </section>

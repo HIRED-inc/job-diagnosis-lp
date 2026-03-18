@@ -6,6 +6,7 @@ import styles from "./page.module.css";
 // ─── Figma Asset URLs ──────────────────────────────────────────────────────
 const ASSETS = {
   logomark: "/images/a-logo.svg",
+  logomarkWhite: "/images/logo-white.svg",
   logoText: "/images/logo-text.png",
   logoAssign: "/images/logo-assign.png",
   logoProcommit: "/images/logo-procommit.png",
@@ -777,7 +778,7 @@ function Footer() {
         <div className={styles.footerBottom}>
           <div className={styles.footerLogoWrap}>
             <img
-              src={ASSETS.logomark}
+              src={ASSETS.logomarkWhite}
               alt="エージェントの窓口"
               className={styles.footerLogomark}
             />

@@ -993,7 +993,7 @@
 
 @media (min-width: 1024px) {
   .agentItem {
-    flex-direction: center;
+    flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
     padding: 0;
@@ -1064,11 +1064,11 @@
 
 @media (min-width: 1024px) {
   .agentsNote {
-    text-align: left;
+    text-align: center;
     border: 1px solid #E4AD5A;
     border-radius: 4px;
     padding: 1rem 1.5rem;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     background: #F0E7D9;
     margin-top: 3rem;
   }

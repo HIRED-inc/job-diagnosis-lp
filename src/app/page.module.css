@@ -98,7 +98,6 @@
 }
 
 .headerInner {
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -150,7 +149,7 @@
 .headerNavLink {
   color: #1f1f1f;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   transition: color 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -953,6 +952,7 @@
   .agentsSubText {
     font-size: 1rem;
     margin-bottom: 4rem;
+    margin-left: 0;
   }
 }
 

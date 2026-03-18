@@ -199,15 +199,7 @@ function PersonIcon() {
 
 function BuildingIcon() {
   return (
-    <svg width="200" height="200" viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="40" cy="40" r="40" fill="#374151"/>
-      <rect x="22" y="20" width="36" height="42" rx="2" fill="white"/>
-      <rect x="28" y="28" width="8" height="8" fill="#374151"/>
-      <rect x="44" y="28" width="8" height="8" fill="#374151"/>
-      <rect x="28" y="42" width="8" height="8" fill="#374151"/>
-      <rect x="44" y="42" width="8" height="8" fill="#374151"/>
-      <rect x="34" y="54" width="12" height="8" fill="#374151"/>
-    </svg>
+    <img src="/images/icon-building.svg" width={48} height={48} alt="" />
   );
 }
 

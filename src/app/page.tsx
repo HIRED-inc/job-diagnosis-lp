@@ -14,6 +14,7 @@ const ASSETS = {
   step02: "/images/step02.png",
   step03: "/images/step03.png",
   serviceIllustration: "/images/illustration.png",
+  solutionsIllustration: "/images/illustration-agent.png",
   heroBg: "/images/hero.jpg",
 };
 
@@ -399,10 +400,10 @@ function ProblemsSection() {
       <div className={styles.sectionInner}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionHeaderCenter}>
-            <SectionLabel label="こんな悩みはありませんか？" />
+            <SectionLabel label="こんな悩み、ありませんか？" />
           </div>
           <h2 className={styles.sectionHeading}>
-            よくある転職の悩み
+            こんな人におすすめ
           </h2>
         </div>
 
@@ -470,7 +471,7 @@ function SolutionsSection() {
             </h2>
             <div className={styles.solutionsImgWrap}>
               <img
-                src={ASSETS.serviceIllustration}
+                src={ASSETS.solutionsIllustration}
                 alt="エージェントの窓口イラスト"
                 className={styles.solutionsIllustration}
               />

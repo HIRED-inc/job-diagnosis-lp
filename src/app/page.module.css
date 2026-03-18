@@ -436,7 +436,8 @@
 
 @media (min-width: 1024px) {
   .serviceIllustrationWrap {
-    max-width: none;
+    flex: 1;
+    margin: 0;
   }
 }
 
@@ -450,6 +451,13 @@
 @media (min-width: 1024px) {
   .serviceIllustration {
     max-width: 440px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .serviceCta {
+    max-width: none;
+    margin-top: 3rem;
   }
 }
 

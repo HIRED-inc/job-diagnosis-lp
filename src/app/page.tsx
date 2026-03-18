@@ -583,13 +583,13 @@ function StepsSection() {
                 />
               </div>
 
-              {/* Step number */}
-              <p className={styles.stepNum}>{step.num}</p>
-
-              {/* Title */}
-              <h3 className={styles.stepTitle}>
-                {step.title}
-              </h3>
+              {/* Step number + Title */}
+              <div className={styles.stepHeader}>
+                <p className={styles.stepNum}>{step.num}</p>
+                <h3 className={styles.stepTitle}>
+                  {step.title}
+                </h3>
+              </div>
 
               {/* Body */}
               <p className={styles.stepBody}>

@@ -1397,6 +1397,7 @@
 
 /* Badge row */
 .comparisonBadgeRow {
+  text-align: center;
   padding-top: 1.25rem;
   padding-bottom: 0.5rem;
 }
@@ -1483,8 +1484,9 @@
 
 /* Agent note */
 .comparisonAgentNote {
+  text-align: center;
   font-size: 0.75rem;
-  color: #555;
+  color: #1a1a1a;
   padding: 0.5rem 0 0.75rem;
 }
 

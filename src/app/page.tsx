@@ -57,6 +57,14 @@ function CtaButtonCenter({ className = "" }: { className?: string }) {
   );
 }
 
+function FloatingCtaBanner() {
+  return (
+    <div className={styles.floatingCta}>
+      <CtaButton className={styles.floatingCtaBtn} />
+    </div>
+  );
+}
+
 // ─── Header ───────────────────────────────────────────────────────────────
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -138,7 +146,9 @@ function HeroSection() {
             <span className={styles.heroSubLineDash} />
             <p className={styles.heroSubText}>でも、転職できるかわからない。</p>
           </div>
-          <CtaButton />
+          <div className={styles.heroCtaDesktop}>
+            <CtaButton />
+          </div>
         </div>
       </div>
     </section>
@@ -816,6 +826,7 @@ export default function Page() {
         <FaqSection />
       </main>
       <Footer />
+      <FloatingCtaBanner />
     </div>
   );
 }

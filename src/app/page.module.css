@@ -454,8 +454,13 @@
   }
 }
 
+.serviceCta {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   .serviceCta {
+    display: block;
     max-width: 768px;
     margin-left: auto;
     margin-right: auto;
@@ -651,8 +656,14 @@
 
 .sectionCta {
   margin-top: 3rem;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .sectionCta {
+    display: flex;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -807,8 +818,14 @@
 
 .solutionsCta {
   margin-top: 2.5rem;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .solutionsCta {
+    display: flex;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -922,8 +939,14 @@
 
 .stepsCta {
   margin-top: 3rem;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .stepsCta {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1108,8 +1131,14 @@
 
 .agentsCta {
   margin-top: 2.5rem;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .agentsCta {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1221,8 +1250,14 @@
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: none;
   justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .faqCta {
+    display: flex;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1546,6 +1581,13 @@
 /* CTA */
 .comparisonCta {
   margin-top: 2.5rem;
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .comparisonCta {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1639,4 +1681,41 @@
 
 .footerLink:hover {
   color: #ffffff;
+}
+
+/* ─── Hero CTA (desktop only) ────────────────────────────────────────────── */
+.heroCtaDesktop {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .heroCtaDesktop {
+    display: block;
+  }
+}
+
+/* ─── Floating CTA (mobile only) ─────────────────────────────────────────── */
+.floatingCta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 16px 16px;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+  z-index: 100;
+  pointer-events: none;
+}
+
+.floatingCta > * {
+  pointer-events: auto;
+}
+
+@media (min-width: 1024px) {
+  .floatingCta {
+    display: none;
+  }
+}
+
+.floatingCtaBtn {
+  width: 100%;
 }

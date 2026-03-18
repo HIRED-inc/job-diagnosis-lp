@@ -424,39 +424,41 @@ function ProblemsSection() {
           </h2>
         </div>
 
-        <div className={styles.sectionImgWrap}>
-          <img
-            src={ASSETS.problemsIllustration}
-            alt="エージェントの窓口イラスト"
-            className={styles.sectionIllustration}
-          />
-        </div>
+        <div className={styles.problemsLayout}>
+          <div className={styles.sectionImgWrap}>
+            <img
+              src={ASSETS.problemsIllustration}
+              alt="エージェントの窓口イラスト"
+              className={styles.sectionIllustration}
+            />
+          </div>
 
-        <div className={styles.problemsList}>
-          {PROBLEMS.map((item, i) => (
-            <div key={i}>
-              <div className={styles.problemItem}>
-                <div className={styles.itemContent}>
-                  <h3 className={styles.problemTitle}>
-                    {item.title}
-                  </h3>
-                  <p className={styles.itemBody}>
-                    {item.body}
-                  </p>
+          <div className={styles.problemsList}>
+            {PROBLEMS.map((item, i) => (
+              <div key={i}>
+                <div className={styles.problemItem}>
+                  <div className={styles.itemContent}>
+                    <h3 className={styles.problemTitle}>
+                      {item.title}
+                    </h3>
+                    <p className={styles.itemBody}>
+                      {item.body}
+                    </p>
+                  </div>
+                  <span className={styles.itemNumber}>
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
                 </div>
-                <span className={styles.itemNumber}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
+                {i < PROBLEMS.length - 1 && (
+                  <hr className={styles.itemDivider} />
+                )}
               </div>
-              {i < PROBLEMS.length - 1 && (
-                <hr className={styles.itemDivider} />
-              )}
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
 
         <div className={styles.sectionCta}>
-          <CtaButtonCenter />
+          <CtaButton className={styles.problemsCtaBtn} />
         </div>
       </div>
     </section>

@@ -436,9 +436,6 @@ function ProblemsSection() {
           {PROBLEMS.map((item, i) => (
             <div key={i}>
               <div className={styles.problemItem}>
-                <span className={styles.itemNumber}>
-                  {String(i + 1).padStart(2, "0")}
-                </span>
                 <div className={styles.itemContent}>
                   <h3 className={styles.problemTitle}>
                     {item.title}
@@ -447,6 +444,9 @@ function ProblemsSection() {
                     {item.body}
                   </p>
                 </div>
+                <span className={styles.itemNumber}>
+                  {String(i + 1).padStart(2, "0")}
+                </span>
               </div>
               {i < PROBLEMS.length - 1 && (
                 <hr className={styles.itemDivider} />

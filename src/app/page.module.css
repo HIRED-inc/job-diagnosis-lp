@@ -552,11 +552,10 @@
 
 .itemNumber {
   color: #aa9473;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 400;
   font-family: var(--font-dm-serif-display);
-  margin-top: 0.25rem;
-  width: 1.5rem;
+  align-self: flex-start;
   flex-shrink: 0;
 }
 

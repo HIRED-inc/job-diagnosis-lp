@@ -325,7 +325,7 @@ function CtaSection() {
           サービスの詳細や審査基準について、お気軽にお問い合わせください。<br />
           担当者より2営業日以内にご連絡いたします。
         </p>
-        <a href="mailto:info@hired.co.jp" className={styles.ctaBtn}>
+        <a href="mailto:info@hired.co.jp" className={styles.heroBtn}>
           お問い合わせはこちら ›
         </a>
       </div>

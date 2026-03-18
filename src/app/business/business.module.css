@@ -394,6 +394,39 @@
   line-height: 1.8;
 }
 
+/* ─── Value list ─────────────────────────────────────────────────────────── */
+.valueList {
+  max-width: 820px;
+  margin: 2rem auto 0;
+}
+
+.valueItem {
+  padding: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.valueNum {
+  color: #d0c8be;
+  font-size: 3.5rem;
+  font-weight: 400;
+  font-family: var(--font-dm-serif-display);
+  line-height: 1;
+  flex-shrink: 0;
+  width: 3.5rem;
+  margin-top: 0.25rem;
+}
+
+.valueTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+  white-space: pre-line;
+}
+
 /* ─── Service card list ──────────────────────────────────────────────────── */
 .serviceCardList {
   display: flex;

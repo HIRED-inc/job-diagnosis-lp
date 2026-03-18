@@ -137,18 +137,18 @@ function ServiceSection() {
 const VALUE_ITEMS = [
   {
     num: "01",
-    title: "通常の求人広告より掲載費用を大幅に抑えられる",
-    body: "求人媒体への高額な掲載費用が不要。コストを抑えながら優秀な求職者へアプローチできます。",
+    title: "紹介者の\n面談可否を選べる",
+    body: "紹介した求職者との面談可否を選べます。紹介できる求人がない・エリア的に難しいと判断した場合は見送ることができます。",
   },
   {
     num: "02",
-    title: "定額掲載と比べ掲載費用率が低い",
-    body: "定額型の掲載サービスと比較して、費用対効果の高い採用活動を実現できます。",
+    title: "求職者の\n面談着席率が高い",
+    body: "コンサルタントがじっくり面談して紹介するため、面談着席率が高いのが特徴です。",
   },
   {
     num: "03",
-    title: "紹介手数料が0%、成功報酬型でご利用可能",
-    body: "初期費用・紹介手数料は一切不要。採用が成立した場合のみ費用が発生する完全成功報酬型です。",
+    title: "紹介費用は0円。\nコストを抑えて利用可",
+    body: "紹介における費用は一切かかりません。決定報酬のみで利用できます。",
   },
 ];
 
@@ -166,15 +166,18 @@ function ValueSection() {
           <div className={styles.sectionIllustrationWrap}>
             <img src="/images/illustration-celebrate.png" alt="コスト削減イラスト" className={styles.sectionIllustration} />
           </div>
+          <p className={styles.serviceDesc}>
+            紹介に費用は掛かりません。面談可否を選択でき、高い着席率を実現します。
+          </p>
         </div>
 
-        <div className={styles.itemList}>
+        <div className={styles.valueList}>
           {VALUE_ITEMS.map((item, i) => (
             <div key={i}>
-              <div className={styles.item}>
-                <span className={styles.itemNumber}>{item.num}</span>
+              <div className={styles.valueItem}>
+                <span className={styles.valueNum}>{item.num}</span>
                 <div className={styles.itemContent}>
-                  <h3 className={styles.itemTitle}>{item.title}</h3>
+                  <h3 className={styles.valueTitle}>{item.title}</h3>
                   <p className={styles.itemBody}>{item.body}</p>
                 </div>
               </div>

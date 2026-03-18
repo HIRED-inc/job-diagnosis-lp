@@ -33,7 +33,8 @@ function SectionLabel({ label }: { label: string }) {
 
 function CtaButton({ className = "" }: { className?: string }) {
   return (
-    <button
+    <a
+      href="/registration"
       className={`${styles.ctaButton} ${className}`}
       style={{ background: "linear-gradient(90deg, #63ab3f 0%, #37db68 100%)" }}
     >
@@ -43,7 +44,7 @@ function CtaButton({ className = "" }: { className?: string }) {
       </div>
       <span className={styles.ctaLabel}>無料で相談する</span>
       <span className={styles.ctaArrow}>›</span>
-    </button>
+    </a>
   );
 }
 

@@ -23,6 +23,9 @@ const dmSerifDisplay = DM_Serif_Display({
 export const metadata: Metadata = {
   title: "エージェントの窓口",
   description: "無料の転職相談サービス",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

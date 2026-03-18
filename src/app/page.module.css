@@ -272,7 +272,7 @@
 .heroContent {
   position: relative;
   z-index: 10;
-  max-width: 1280px;
+  max-width: 1024px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -442,7 +442,7 @@
 
 .serviceIllustration {
   width: 100%;
-  max-width: 360px;
+  max-width: 240px;
   height: auto;
   object-fit: contain;
 }
@@ -1189,6 +1189,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 }
 
 .comparisonCardHeader {
@@ -1255,6 +1256,7 @@
 
 .comparisonFeatureTitle {
   padding: 0.75rem 1rem;
+  min-height: 3rem;
   font-size: 0.8125rem;
   font-weight: 700;
   display: flex;

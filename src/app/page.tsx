@@ -187,7 +187,7 @@ function ServiceSection() {
           </div>
         </div>
 
-        <CtaButton className={styles.serviceCta} />
+        {/*<CtaButton className={styles.serviceCta} />*/}
       </div>
     </section>
   );
@@ -385,9 +385,9 @@ function ComparisonSection() {
         </div>
 
         {/* CTA */}
-        <div className={styles.comparisonCta}>
+        {/* <div className={styles.comparisonCta}>
           <CtaButton className={styles.comparisonCtaBtn} />
-        </div>
+        </div>*/}
       </div>
     </section>
   );
@@ -459,9 +459,9 @@ function ProblemsSection() {
           </div>
         </div>
 
-        <div className={styles.sectionCta}>
+        {/*<div className={styles.sectionCta}>
           <CtaButton className={styles.problemsCtaBtn} />
-        </div>
+        </div>*/}
       </div>
     </section>
   );
@@ -683,9 +683,9 @@ function AgentsSection() {
           審査通過率は約<span className={styles.agentsNoteHighlight}>30%</span>。厳しい基準を設けることで、求職者が安心して紹介を受けられるサービスを維持しています。
         </p>
 
-        <div className={styles.agentsCta}>
+        {/*<div className={styles.agentsCta}>
           <CtaButton className={styles.agentsCtaBtn} />
-        </div>
+        </div>*/}
       </div>
     </section>
   );

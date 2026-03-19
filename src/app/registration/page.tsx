@@ -4,7 +4,7 @@ import { useState } from "react";
 import styles from "./registration.module.css";
 
 const TOTAL_STEPS = 7;
-const PROGRESS_VALUES = [14, 28, 42, 57, 71, 85, 100];
+const PROGRESS_VALUES = [0, 14, 28, 42, 57, 71, 85, 100];
 
 const INCOME_OPTIONS = [
   "300万円以下", "350万円", "400万円", "450万円", "500万円",

@@ -324,7 +324,7 @@
 
 .heroSubText {
   color: rgba(255, 255, 255, 0.9);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: var(--font-noto-serif-jp);
   font-weight: 600;
   letter-spacing: 2px;
@@ -616,7 +616,7 @@
 
 .problemTitle {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1f1f1f;
   line-height: 1.375;
   margin-bottom: 0.75rem;
@@ -790,7 +790,7 @@
 
 .solutionTitle {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #1f1f1f;
   line-height: 1.375;
   margin-bottom: 0.5rem;
@@ -1323,7 +1323,7 @@
 
 .comparisonHeading {
   margin-top: 1rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 500;
   color: #1f1f1f;

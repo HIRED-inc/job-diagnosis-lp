@@ -173,7 +173,7 @@ function ServiceSection() {
               無料の転職相談サービスです。
             </p>
             <p className={styles.serviceNote}>
-              ※本サービスは転職エージェントではありません。
+              ※転職エージェントサービスではありません。
             </p>
           </div>
 

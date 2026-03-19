@@ -1102,10 +1102,19 @@
 }
 
 .agentsNote {
-  margin-top: 2rem;
-  text-align: center;
-  color: #1f1f1f;
-  font-size: 0.875rem;
+  text-align: left;
+    background: #f0e7d9;
+    border: 1px solid #e4ad5a;
+    border-radius: 4px;
+    max-width: 768px;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    font-size: .75rem;
+    color: #1f1f1f;
+    margin-top: 2rem;
+    font-size: .75rem;
 }
 
 @media (min-width: 768px) {
